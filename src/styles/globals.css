@@ -1,0 +1,1544 @@
+/* Import ITC Avant Garde Gothic from Google Fonts and other sources */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.cdnfonts.com/css/itc-avant-garde-gothic');
+
+@custom-variant dark (&:is(.dark *));
+
+/* ITC Avant Garde Gothic Std Bold Font Face Declarations */
+@font-face {
+  font-family: 'ITC Avant Garde Gothic Std Bold';
+  src: url('https://fonts.cdnfonts.com/css/itc-avant-garde-gothic') format('woff2'),
+       url('https://fonts.cdnfonts.com/css/itc-avant-garde-gothic') format('woff');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'ITC Avant Garde Gothic Std Bold';
+  src: url('https://fonts.cdnfonts.com/css/itc-avant-garde-gothic') format('woff2'),
+       url('https://fonts.cdnfonts.com/css/itc-avant-garde-gothic') format('woff');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'ITC Avant Garde Gothic Std Bold';
+  src: url('https://fonts.cdnfonts.com/css/itc-avant-garde-gothic') format('woff2'),
+       url('https://fonts.cdnfonts.com/css/itc-avant-garde-gothic') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'ITC Avant Garde Gothic Std Bold';
+  src: url('https://fonts.cdnfonts.com/css/itc-avant-garde-gothic') format('woff2'),
+       url('https://fonts.cdnfonts.com/css/itc-avant-garde-gothic') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'ITC Avant Garde Gothic Std Bold';
+  src: url('https://fonts.cdnfonts.com/css/itc-avant-garde-gothic') format('woff2'),
+       url('https://fonts.cdnfonts.com/css/itc-avant-garde-gothic') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'ITC Avant Garde Gothic Std Bold';
+  src: url('https://fonts.cdnfonts.com/css/itc-avant-garde-gothic') format('woff2'),
+       url('https://fonts.cdnfonts.com/css/itc-avant-garde-gothic') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'ITC Avant Garde Gothic Std Bold';
+  src: url('https://fonts.cdnfonts.com/css/itc-avant-garde-gothic') format('woff2'),
+       url('https://fonts.cdnfonts.com/css/itc-avant-garde-gothic') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'ITC Avant Garde Gothic Std Bold';
+  src: url('https://fonts.cdnfonts.com/css/itc-avant-garde-gothic') format('woff2'),
+       url('https://fonts.cdnfonts.com/css/itc-avant-garde-gothic') format('woff');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'ITC Avant Garde Gothic Std Bold';
+  src: url('https://fonts.cdnfonts.com/css/itc-avant-garde-gothic') format('woff2'),
+       url('https://fonts.cdnfonts.com/css/itc-avant-garde-gothic') format('woff');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --font-size: 16px;
+  
+  /* THONBRIDGE Corporate Brand Colors */
+  --corporate-blue: #003883;
+  --corporate-blue-hover: #002d6b;
+  --corporate-charcoal: #2B2B2B;
+  --corporate-gray: #515960;
+  --corporate-light-gray: #F4F4F4;
+  --corporate-white: #FFFFFF;
+  
+  /* Enhanced Responsive Container System - Mobile First */
+  --container-xs: 100%;          /* 320px+ phones */
+  --container-sm: 100%;          /* 375px+ phones */
+  --container-md: 100%;          /* 768px+ tablets */
+  --container-lg: 1024px;        /* 1024px+ small laptops */
+  --container-xl: 1280px;        /* 1280px+ laptops */
+  --container-2xl: 1536px;       /* 1536px+ large laptops */
+  --container-3xl: 1600px;       /* 1600px+ desktop */
+  --container-4xl: 1800px;       /* 1800px+ wide desktop */
+  --container-max: 1920px;       /* 1920px+ ultra-wide */
+  
+  /* Responsive Spacing System */
+  --spacing-xs: 0.5rem;          /* 8px */
+  --spacing-sm: 1rem;            /* 16px */
+  --spacing-md: 1.5rem;          /* 24px */
+  --spacing-lg: 2rem;            /* 32px */
+  --spacing-xl: 3rem;            /* 48px */
+  --spacing-2xl: 4rem;           /* 64px */
+  --spacing-3xl: 6rem;           /* 96px */
+  
+  --background: #ffffff;
+  --foreground: var(--corporate-charcoal);
+  --card: #ffffff;
+  --card-foreground: var(--corporate-charcoal);
+  --popover: #ffffff;
+  --popover-foreground: var(--corporate-charcoal);
+  --primary: var(--corporate-blue);
+  --primary-foreground: #ffffff;
+  --secondary: var(--corporate-light-gray);
+  --secondary-foreground: var(--corporate-charcoal);
+  --muted: var(--corporate-light-gray);
+  --muted-foreground: var(--corporate-gray);
+  --accent: var(--corporate-blue);
+  --accent-foreground: #ffffff;
+  --destructive: #ef4444;
+  --destructive-foreground: #ffffff;
+  --border: #e5e5e5;
+  --input: #ffffff;
+  --ring: var(--corporate-blue);
+  --radius: 0.5rem;
+  
+  --font-weight-medium: 500;
+  --font-weight-normal: 400;
+  --font-weight-bold: 700;
+  --font-weight-black: 900;
+  --font-weight-light: 300;
+  --font-weight-thin: 100;
+  --font-weight-extralight: 200;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --radius-sm: calc(var(--radius) - 2px);
+  --radius-md: var(--radius);
+  --radius-lg: calc(var(--radius) + 2px);
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'ITC Avant Garde Gothic Std Bold', 'Avant Garde', 'Century Gothic', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.6;
+    /* Prevent horizontal scroll on mobile */
+    overflow-x: hidden;
+    /* Ensure smooth scrolling performance */
+    -webkit-overflow-scrolling: touch;
+    /* Clean white background */
+    background-color: #ffffff;
+  }
+
+  /* Root HTML Element Optimizations */
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 60px;
+    /* Prevent horizontal overflow */
+    overflow-x: hidden;
+    /* Mobile viewport optimization */
+    height: 100%;
+    width: 100%;
+    /* Disable text size adjust on mobile */
+    -webkit-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+    /* Clean white background */
+    background-color: #ffffff;
+  }
+
+  /* Mobile-first body styling */
+  body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    /* Prevent text selection issues on mobile */
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: text; /* Allow text selection for content */
+  }
+
+  /* Fix for iOS viewport issues */
+  @supports (-webkit-appearance: none) {
+    html {
+      height: -webkit-fill-available;
+    }
+    
+    body {
+      min-height: -webkit-fill-available;
+    }
+  }
+
+  /* Universal ITC Avant Garde Gothic Std Bold Font Application */
+  *, *::before, *::after {
+    font-family: 'ITC Avant Garde Gothic Std Bold', 'Avant Garde', 'Century Gothic', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif !important;
+  }
+
+  /* Ensure all text elements use ITC Avant Garde Gothic Std Bold */
+  h1, h2, h3, h4, h5, h6, p, a, span, div, li, ul, ol, blockquote, cite, 
+  button, input, textarea, select, label, legend, fieldset, 
+  .text-xs, .text-sm, .text-base, .text-lg, .text-xl, .text-2xl, .text-3xl, .text-4xl, .text-5xl, .text-6xl,
+  [class*="text-"], [style*="font-family"] {
+    font-family: 'ITC Avant Garde Gothic Std Bold', 'Avant Garde', 'Century Gothic', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif !important;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 60px;
+  }
+
+  /* Hide scrollbar completely */
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Hide scrollbar for Firefox */
+  html {
+    scrollbar-width: none;
+  }
+
+  /* Hide scrollbar for IE and Edge */
+  body {
+    -ms-overflow-style: none;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: var(--corporate-gray);
+    border-radius: 4px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--corporate-charcoal);
+  }
+
+  /* Utility for letter spacing */
+  .adjustLetterSpacing {
+    letter-spacing: 4px;
+  }
+
+  /* Netflix-style gradient utilities */
+  .gradient-overlay-dark {
+    background: linear-gradient(to bottom, 
+      rgba(0, 0, 0, 0.7) 0%, 
+      rgba(0, 0, 0, 0.5) 30%, 
+      rgba(0, 0, 0, 0.4) 50%, 
+      rgba(0, 0, 0, 0.6) 80%, 
+      rgba(0, 0, 0, 0.8) 100%
+    );
+  }
+
+  .gradient-overlay-cinematic {
+    background: 
+      linear-gradient(to bottom, 
+        rgba(0, 0, 0, 0.7) 0%, 
+        rgba(0, 0, 0, 0.5) 30%, 
+        rgba(0, 0, 0, 0.4) 50%, 
+        rgba(0, 0, 0, 0.6) 80%, 
+        rgba(0, 0, 0, 0.8) 100%
+      ),
+      linear-gradient(to right, 
+        rgba(0, 0, 0, 0.3) 0%, 
+        rgba(0, 0, 0, 0.1) 50%, 
+        rgba(0, 0, 0, 0.3) 100%
+      );
+  }
+
+  /* Backdrop blur support */
+  .backdrop-blur-custom {
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+  }
+
+  /* Hero slideshow animations */
+  .slide-fade-in {
+    animation: fadeSlideIn 2s ease-in-out;
+  }
+
+  .slide-fade-out {
+    animation: fadeSlideOut 2s ease-in-out;
+  }
+
+  .transition-ultra-smooth {
+    transition: all 2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  }
+
+  .fade-ultra-smooth {
+    transition: opacity 2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  }
+
+  /* Enhanced hero image zoom animations */
+  .hero-image-zoom {
+    transition: all 2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    transform-origin: center center;
+  }
+
+  .hero-image-zoom-active {
+    transform: scale(1.05);
+  }
+
+  /* Smooth zoom transition for slideshow images */
+  .slideshow-zoom-transition {
+    transition: transform 2s ease-out, opacity 2s ease-in-out;
+    transform-origin: center center;
+    will-change: transform, opacity;
+  }
+
+  /* Image loading optimizations for cross-browser compatibility */
+  img {
+    /* Ensure images display correctly in all browsers */
+    max-width: 100%;
+    height: auto;
+    
+    /* Optimize image loading and rendering */
+    image-rendering: optimizeQuality;
+    image-rendering: -webkit-optimize-contrast;
+    
+    /* Handle loading states */
+    background-color: var(--corporate-charcoal);
+    
+    /* Smooth transitions */
+    transition: opacity 0.3s ease;
+  }
+
+  /* Hero section specific image optimizations */
+  .hero-slideshow img {
+    /* Ensure consistent sizing */
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover;
+    object-position: center;
+    
+    /* Chrome-specific optimizations */
+    will-change: opacity;
+    transform: translateZ(0);
+    backface-visibility: hidden;
+    
+    /* Loading states */
+    background: var(--corporate-charcoal);
+    
+    /* Ensure visibility */
+    display: block;
+  }
+
+  /* Fallback for failed image loads */
+  .hero-slideshow img:not([src]),
+  .hero-slideshow img[src=""],
+  .hero-slideshow img[src="#"] {
+    background: linear-gradient(135deg, var(--corporate-charcoal) 0%, var(--corporate-gray) 100%);
+    opacity: 0.3;
+  }
+
+  @keyframes fadeSlideIn {
+    from {
+      opacity: 0;
+      transform: scale(1.02);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1.05);
+    }
+  }
+
+  @keyframes fadeSlideOut {
+    from {
+      opacity: 1;
+      transform: scale(1.05);
+    }
+    to {
+      opacity: 0;
+      transform: scale(1);
+    }
+  }
+
+  /* Smooth zoom-in animation for hero images */
+  @keyframes heroZoomIn {
+    from {
+      opacity: 0;
+      transform: scale(1);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1.05);
+    }
+  }
+
+  /* Smooth zoom-out animation for hero images */
+  @keyframes heroZoomOut {
+    from {
+      opacity: 1;
+      transform: scale(1.05);
+    }
+    to {
+      opacity: 0;
+      transform: scale(1.02);
+    }
+  }
+
+  /* Navigation dot animations */
+  .nav-dot-pulse {
+    animation: pulse 2s ease-in-out infinite;
+  }
+
+  @keyframes pulse {
+    0%, 100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+    50% {
+      transform: scale(1.1);
+      opacity: 0.8;
+    }
+  }
+
+  /* Enhanced smooth transitions */
+  .transition-all-smooth {
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  /* Industry card animations */
+  .industry-card-hover {
+    transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  }
+
+  .industry-image-zoom {
+    transition: transform 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  }
+
+  /* Why Choose section animations */
+  .advantage-card-hover {
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .stat-card-hover {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  /* Gradient background animations */
+  .gradient-shift {
+    background: linear-gradient(45deg, #F4F4F4, #ffffff, #F4F4F4);
+    background-size: 200% 200%;
+    animation: gradientShift 8s ease infinite;
+  }
+
+  @keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+
+  /* Icon bounce animation */
+  .icon-bounce {
+    animation: iconBounce 2s ease-in-out infinite;
+  }
+
+  @keyframes iconBounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-10px);
+    }
+    60% {
+      transform: translateY(-5px);
+    }
+  }
+
+  /* Hover scale animations */
+  .hover-scale-105:hover {
+    transform: scale(1.05);
+  }
+
+  .hover-scale-110:hover {
+    transform: scale(1.1);
+  }
+
+  /* Backdrop blur enhancements */
+  .backdrop-blur-light {
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+  }
+
+  /* Full width utilities */
+  .full-width {
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+  }
+
+  /* Clean White Background Utilities - No Noise */
+  .bg-clean-white {
+    background-color: #ffffff;
+  }
+
+  .bg-clean-light-gray {
+    background-color: var(--corporate-light-gray);
+  }
+
+  /* Card and section clean variants */
+  .card-clean {
+    background: #ffffff;
+  }
+
+  .section-clean {
+    background-color: #ffffff;
+  }
+
+  /* 1920px-First Container Utilities */
+  .container-1920 {
+    max-width: var(--container-max);
+    margin: 0 auto;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .container-wide {
+    max-width: var(--container-4xl);
+    margin: 0 auto;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .container-full {
+    max-width: var(--container-max);
+    margin: 0 auto;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  /* Enhanced spacing for larger displays */
+  .section-padding-1920 {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+
+  .section-padding-xl {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+  }
+
+  /* Grid utilities for 1920px displays */
+  .grid-1920-4 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3rem;
+  }
+
+  .grid-1920-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4rem;
+  }
+
+  .grid-1920-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 6rem;
+  }
+
+  /* Responsive overrides */
+  @media (max-width: 1536px) {
+    .container-1920 {
+      max-width: var(--container-2xl);
+    }
+  }
+
+  @media (max-width: 1280px) {
+    .container-1920 {
+      max-width: var(--container-xl);
+    }
+    
+    .grid-1920-4 {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2rem;
+    }
+    
+    .grid-1920-3 {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 3rem;
+    }
+    
+    .section-padding-1920 {
+      padding-top: 4rem;
+      padding-bottom: 4rem;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .container-1920 {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+    
+    .grid-1920-4,
+    .grid-1920-3,
+    .grid-1920-2 {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+    
+    .section-padding-1920 {
+      padding-top: 3rem;
+      padding-bottom: 3rem;
+    }
+  }
+
+  /* Enhanced Laptop Responsiveness */
+  
+  /* Large Laptops & Small Desktops (1680px - 1920px) */
+  @media (min-width: 1680px) and (max-width: 1919px) {
+    .container-1920 {
+      max-width: var(--container-3xl);
+      padding-left: 3rem;
+      padding-right: 3rem;
+    }
+    
+    .section-padding-1920 {
+      padding-top: 6rem;
+      padding-bottom: 6rem;
+    }
+    
+    .grid-1920-4 {
+      gap: 2.5rem;
+    }
+    
+    .grid-1920-3 {
+      gap: 3.5rem;
+    }
+  }
+
+  /* Standard Large Laptops (1440px - 1679px) */
+  @media (min-width: 1440px) and (max-width: 1679px) {
+    .container-1920 {
+      max-width: var(--container-2xl);
+      padding-left: 2.5rem;
+      padding-right: 2.5rem;
+    }
+    
+    .section-padding-1920 {
+      padding-top: 5rem;
+      padding-bottom: 5rem;
+    }
+    
+    .grid-1920-4 {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+    }
+    
+    .grid-1920-3 {
+      gap: 3rem;
+    }
+  }
+
+  /* Medium Laptops (1366px - 1439px) - Very Common */
+  @media (min-width: 1366px) and (max-width: 1439px) {
+    .container-1920 {
+      max-width: var(--container-xl);
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+    
+    .section-padding-1920 {
+      padding-top: 4.5rem;
+      padding-bottom: 4.5rem;
+    }
+    
+    .grid-1920-4 {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+    }
+    
+    .grid-1920-3 {
+      gap: 2.5rem;
+    }
+    
+    .grid-1920-2 {
+      gap: 4rem;
+    }
+  }
+
+  /* Small Laptops (1024px - 1365px) */
+  @media (min-width: 1024px) and (max-width: 1365px) {
+    .container-1920 {
+      max-width: var(--container-lg);
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+    }
+    
+    .section-padding-1920 {
+      padding-top: 4rem;
+      padding-bottom: 4rem;
+    }
+    
+    .grid-1920-4 {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.5rem;
+    }
+    
+    .grid-1920-3 {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2rem;
+    }
+    
+    .grid-1920-2 {
+      gap: 3rem;
+    }
+  }
+
+  /* Tablet Landscape to Small Laptop (768px - 1023px) */
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .container-1920 {
+      max-width: var(--container-md);
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+    }
+    
+    .section-padding-1920 {
+      padding-top: 3.5rem;
+      padding-bottom: 3.5rem;
+    }
+    
+    .grid-1920-4,
+    .grid-1920-3 {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.5rem;
+    }
+    
+    .grid-1920-2 {
+      gap: 2rem;
+    }
+  }
+
+  /* Mobile & Small Tablets */
+  @media (max-width: 767px) {
+    .container-1920 {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+    
+    .grid-1920-4,
+    .grid-1920-3,
+    .grid-1920-2 {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+    
+    .section-padding-1920 {
+      padding-top: 3rem;
+      padding-bottom: 3rem;
+    }
+  }
+
+  /* Hero Section Responsive Typography */
+  .hero-title {
+    font-size: 1.5rem; /* 24px */
+    line-height: 1.2;
+  }
+
+  .hero-subtitle {
+    font-size: 0.875rem; /* 14px */
+    line-height: 1.4;
+  }
+
+  /* Mobile Hero Optimizations */
+  @media (max-width: 640px) {
+    .hero-title {
+      font-size: 1.5rem; /* 24px */
+      line-height: 1.3;
+    }
+    .hero-subtitle {
+      font-size: 0.875rem; /* 14px */
+      line-height: 1.4;
+    }
+    
+    /* Mobile-specific hero height */
+    section.relative.overflow-hidden.h-screen {
+      height: 100vh;
+      height: 100dvh; /* Dynamic viewport height for mobile */
+    }
+    
+    /* Ensure content doesn't get cut off on small screens */
+    .hero-compact {
+      height: 100vh;
+      height: 100dvh;
+      min-height: 500px;
+    }
+  }
+
+  @media (min-width: 640px) {
+    .hero-title {
+      font-size: 1.875rem; /* 30px */
+    }
+    .hero-subtitle {
+      font-size: 1rem; /* 16px */
+    }
+  }
+
+  @media (min-width: 768px) {
+    .hero-title {
+      font-size: 2.25rem; /* 36px */
+    }
+    .hero-subtitle {
+      font-size: 1.125rem; /* 18px */
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .hero-title {
+      font-size: 3rem; /* 48px */
+    }
+    .hero-subtitle {
+      font-size: 1.25rem; /* 20px */
+    }
+  }
+
+  @media (min-width: 1280px) {
+    .hero-title {
+      font-size: 3rem; /* 48px */
+    }
+    .hero-subtitle {
+      font-size: 1.25rem; /* 20px */
+    }
+  }
+
+  /* Enhanced Typography Scaling for All Laptop Sizes */
+  
+  /* Small Laptops (1024px - 1365px) Typography */
+  @media (min-width: 1024px) and (max-width: 1365px) {
+    .hero-title {
+      font-size: 2.5rem; /* 40px - Smaller than large screens */
+    }
+    .hero-subtitle {
+      font-size: 1.125rem; /* 18px */
+    }
+    
+    /* Base typography scaling */
+    h1 {
+      font-size: 2.25rem !important; /* 36px */
+      line-height: 2.5rem !important; /* 40px */
+    }
+    
+    h2 {
+      font-size: 1.875rem !important; /* 30px */
+      line-height: 2.125rem !important; /* 34px */
+    }
+    
+    h3 {
+      font-size: 1.375rem !important; /* 22px */
+      line-height: 1.75rem !important; /* 28px */
+    }
+    
+    p {
+      font-size: 0.9375rem !important; /* 15px */
+      line-height: 1.375rem !important; /* 22px */
+    }
+  }
+
+  /* Medium Laptops (1366px - 1439px) Typography */
+  @media (min-width: 1366px) and (max-width: 1439px) {
+    .hero-title {
+      font-size: 2.75rem; /* 44px */
+    }
+    .hero-subtitle {
+      font-size: 1.1875rem; /* 19px */
+    }
+    
+    /* Base typography scaling */
+    h1 {
+      font-size: 2.5rem !important; /* 40px */
+      line-height: 2.75rem !important; /* 44px */
+    }
+    
+    h2 {
+      font-size: 2rem !important; /* 32px */
+      line-height: 2.25rem !important; /* 36px */
+    }
+    
+    h3 {
+      font-size: 1.4375rem !important; /* 23px */
+      line-height: 1.875rem !important; /* 30px */
+    }
+    
+    p {
+      font-size: 0.9375rem !important; /* 15px */
+      line-height: 1.375rem !important; /* 22px */
+    }
+  }
+
+  /* Large Laptops (1440px - 1679px) Typography */
+  @media (min-width: 1440px) and (max-width: 1679px) {
+    .hero-title {
+      font-size: 2.875rem; /* 46px */
+    }
+    .hero-subtitle {
+      font-size: 1.1875rem; /* 19px */
+    }
+    
+    /* Base typography scaling */
+    h1 {
+      font-size: 2.625rem !important; /* 42px */
+      line-height: 2.875rem !important; /* 46px */
+    }
+    
+    h2 {
+      font-size: 2.0625rem !important; /* 33px */
+      line-height: 2.375rem !important; /* 38px */
+    }
+    
+    h3 {
+      font-size: 1.4375rem !important; /* 23px */
+      line-height: 1.875rem !important; /* 30px */
+    }
+    
+    p {
+      font-size: 1rem !important; /* 16px */
+      line-height: 1.4375rem !important; /* 23px */
+    }
+  }
+
+  /* Extra Large Laptops (1680px - 1919px) Typography */
+  @media (min-width: 1680px) and (max-width: 1919px) {
+    .hero-title {
+      font-size: 2.9375rem; /* 47px */
+    }
+    .hero-subtitle {
+      font-size: 1.25rem; /* 20px */
+    }
+    
+    /* Base typography scaling */
+    h1 {
+      font-size: 2.75rem !important; /* 44px */
+      line-height: 3rem !important; /* 48px */
+    }
+    
+    h2 {
+      font-size: 2.0625rem !important; /* 33px */
+      line-height: 2.375rem !important; /* 38px */
+    }
+    
+    h3 {
+      font-size: 1.5rem !important; /* 24px */
+      line-height: 2rem !important; /* 32px */
+    }
+    
+    p {
+      font-size: 1rem !important; /* 16px */
+      line-height: 1.4375rem !important; /* 23px */
+    }
+  }
+
+  /* Compact Hero Heights for Better Hierarchy */
+  .hero-compact {
+    height: 80vh;
+    min-height: 600px;
+  }
+
+  @media (min-width: 640px) {
+    .hero-compact {
+      height: 85vh;
+      min-height: 650px;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .hero-compact {
+      height: 80vh;
+      min-height: 700px;
+    }
+  }
+
+  /* Enhanced Hero Heights for All Laptop Sizes */
+  
+  /* Small Laptops (1024px - 1365px) Hero Adjustments */
+  @media (min-width: 1024px) and (max-width: 1365px) {
+    .hero-compact {
+      height: 80vh; /* Slightly smaller for better proportion */
+    }
+  }
+
+  /* Medium Laptops (1366px - 1439px) Hero Adjustments */
+  @media (min-width: 1366px) and (max-width: 1439px) {
+    .hero-compact {
+      height: 82vh;
+    }
+  }
+
+  /* Large Laptops (1440px - 1679px) Hero Adjustments */
+  @media (min-width: 1440px) and (max-width: 1679px) {
+    .hero-compact {
+      height: 85vh;
+    }
+  }
+
+  /* Extra Large Laptops (1680px - 1919px) Hero Adjustments */
+  @media (min-width: 1680px) and (max-width: 1919px) {
+    .hero-compact {
+      height: 87vh;
+    }
+  }
+
+  /* Sticky Navigation Enhancements */
+  .sticky-nav {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+  }
+
+  .sticky-nav-scrolled {
+    box-shadow: 0 4px 20px rgba(0, 56, 131, 0.15);
+  }
+
+  /* Enhanced z-index layers */
+  .z-nav {
+    z-index: 100;
+  }
+
+  .z-hero {
+    z-index: 10;
+  }
+
+  .z-content {
+    z-index: 5;
+  }
+
+  /* Additional border utilities */
+  .border-l-3 {
+    border-left-width: 3px;
+  }
+
+  .border-r-3 {
+    border-right-width: 3px;
+  }
+
+  .border-t-3 {
+    border-top-width: 3px;
+  }
+
+  .border-b-3 {
+    border-bottom-width: 3px;
+  }
+
+  /* Scroll Animation Classes */
+  .fade-in-up {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  }
+
+  .fade-in-up.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .fade-in-left {
+    opacity: 0;
+    transform: translateX(-30px);
+    transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  }
+
+  .fade-in-left.visible {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  .fade-in-right {
+    opacity: 0;
+    transform: translateX(30px);
+    transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  }
+
+  .fade-in-right.visible {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  .fade-in-scale {
+    opacity: 0;
+    transform: scale(0.95);
+    transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  }
+
+  .fade-in-scale.visible {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  /* Enhanced Scroll Animation Classes */
+  .scroll-animate {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  }
+
+  .scroll-animate.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .scroll-animate-slow {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  }
+
+  .scroll-animate-slow.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .scroll-animate-fast {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  }
+
+  .scroll-animate-fast.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* Stagger Animation Delays */
+  .stagger-delay-100 {
+    transition-delay: 0.1s;
+  }
+
+  .stagger-delay-200 {
+    transition-delay: 0.2s;
+  }
+
+  .stagger-delay-300 {
+    transition-delay: 0.3s;
+  }
+
+  .stagger-delay-400 {
+    transition-delay: 0.4s;
+  }
+
+  .stagger-delay-500 {
+    transition-delay: 0.5s;
+  }
+
+  /* Additional stagger classes */
+  .stagger-1 { 
+    transition-delay: 0.1s; 
+  }
+  
+  .stagger-2 { 
+    transition-delay: 0.2s; 
+  }
+  
+  .stagger-3 { 
+    transition-delay: 0.3s; 
+  }
+  
+  .stagger-4 { 
+    transition-delay: 0.4s; 
+  }
+  
+  .stagger-5 { 
+    transition-delay: 0.5s; 
+  }
+  
+  .stagger-6 { 
+    transition-delay: 0.6s; 
+  }
+
+  /* Reduced motion support */
+  @media (prefers-reduced-motion: reduce) {
+    .fade-in-up,
+    .fade-in-left,
+    .fade-in-right,
+    .fade-in-scale,
+    .scroll-animate,
+    .scroll-animate-slow,
+    .scroll-animate-fast {
+      transition: opacity 0.3s ease;
+      transform: none;
+    }
+
+    .fade-in-up.visible,
+    .fade-in-left.visible,
+    .fade-in-right.visible,
+    .fade-in-scale.visible,
+    .scroll-animate.visible,
+    .scroll-animate-slow.visible,
+    .scroll-animate-fast.visible {
+      opacity: 1;
+      transform: none;
+    }
+  }
+
+  /* Scroll Animation Hover Effects */
+  .scroll-animate-hover {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .scroll-animate-hover:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 56, 131, 0.15);
+  }
+
+  .floating-element {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+
+  /* Enhanced scroll trigger animations */
+  .fade-in-up-delayed {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  }
+
+  .fade-in-up-delayed.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* Staggered delays for multiple elements */
+  .stagger-1 { transition-delay: 0.1s; }
+  .stagger-2 { transition-delay: 0.2s; }
+  .stagger-3 { transition-delay: 0.3s; }
+  .stagger-4 { transition-delay: 0.4s; }
+  .stagger-5 { transition-delay: 0.5s; }
+  .stagger-6 { transition-delay: 0.6s; }
+
+  /* Mobile Navigation Styles */
+  .mobile-nav-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(43, 43, 43, 0.95);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    z-index: 150;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+  }
+
+  .mobile-nav-overlay.open {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .mobile-nav-menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 280px;
+    background: var(--corporate-charcoal);
+    transform: translateX(100%);
+    transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    z-index: 160;
+  }
+
+  .mobile-nav-menu.open {
+    transform: translateX(0);
+  }
+
+  .mobile-nav-item {
+    opacity: 0;
+    transform: translateX(20px);
+    transition: all 0.3s ease;
+  }
+
+  .mobile-nav-item.animate {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  /* Hamburger Animation */
+  .hamburger-line {
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: white;
+    transition: all 0.3s ease;
+    transform-origin: center;
+  }
+
+  /* Hamburger line color variants */
+  .hamburger-scrolled .hamburger-line {
+    background: #515960;
+  }
+
+  .hamburger-line:not(:last-child) {
+    margin-bottom: 4px;
+  }
+
+  .hamburger.open .hamburger-line:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+
+  .hamburger.open .hamburger-line:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.open .hamburger-line:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -6px);
+  }
+
+  /* Mobile Logo Responsive Sizing */
+  .logo-responsive {
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: -0.35px;
+  }
+
+  @media (min-width: 640px) {
+    .logo-responsive {
+      font-size: 18px;
+      line-height: 18px;
+      letter-spacing: -0.45px;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .logo-responsive {
+      font-size: 22px;
+      line-height: 22px;
+      letter-spacing: -0.55px;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .logo-responsive {
+      font-size: 28px;
+      line-height: 28px;
+      letter-spacing: -0.7px;
+    }
+  }
+
+  /* Mobile Logo SVG Responsive Sizing */
+  .logo-svg-responsive {
+    width: 12px;
+    height: 12px;
+  }
+
+  @media (min-width: 640px) {
+    .logo-svg-responsive {
+      width: 16px;
+      height: 16px;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .logo-svg-responsive {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .logo-svg-responsive {
+      width: 28px;
+      height: 28px;
+    }
+  }
+
+  /* Mobile Logo Margin Responsive Sizing */
+  .logo-margin-responsive {
+    padding-top: 0.3px;
+    padding-left: 1px;
+    padding-right: 1px;
+  }
+
+  @media (min-width: 640px) {
+    .logo-margin-responsive {
+      padding-top: 0.56px;
+      padding-left: 1.4px;
+      padding-right: 1.4px;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .logo-margin-responsive {
+      padding-top: 0.7px;
+      padding-left: 2.2px;
+      padding-right: 2.2px;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .logo-margin-responsive {
+      padding-top: 0.84px;
+      padding-left: 2.8px;
+      padding-right: 2.8px;
+    }
+  }
+
+  /* Enhanced Logo Font Weight and Size for Laptop Screens */
+  @media (min-width: 1024px) {
+    .lg\:font-black {
+      font-weight: 900 !important;
+      font-style: normal !important;
+      text-shadow: 0 0 0.5px currentColor;
+    }
+    
+    .logo-responsive-text {
+      font-size: var(--laptop-font-size) !important;
+      line-height: var(--laptop-line-height) !important;
+    }
+  }
+}
+
+/**
+ * Base typography with ITC Avant Garde Gothic Std Bold
+ */
+@layer base {
+  :where(:not(:has([class*=" text-"]), :not(:has([class^="text-"])))) {
+    h1 {
+      font-family: 'ITC Avant Garde Gothic Std Bold', 'Avant Garde', 'Century Gothic', sans-serif;
+      font-weight: 900;
+      font-size: 46.7px;
+      line-height: 51.33px;
+      text-transform: uppercase;
+      color: var(--corporate-charcoal);
+    }
+
+    h2 {
+      font-family: 'ITC Avant Garde Gothic Std Bold', 'Avant Garde', 'Century Gothic', sans-serif;
+      font-weight: 900;
+      font-size: 33.3px;
+      line-height: 36.67px;
+      text-transform: uppercase;
+      color: var(--corporate-charcoal);
+    }
+
+    h3 {
+      font-family: 'ITC Avant Garde Gothic Std Bold', 'Avant Garde', 'Century Gothic', sans-serif;
+      font-weight: 900;
+      font-size: 1.5rem;
+      line-height: 1.4;
+      color: var(--corporate-charcoal);
+    }
+
+    h4 {
+      font-family: 'ITC Avant Garde Gothic Std Bold', 'Avant Garde', 'Century Gothic', sans-serif;
+      font-weight: 500;
+      font-size: 1.25rem;
+      line-height: 1.4;
+      color: var(--corporate-charcoal);
+    }
+
+    p {
+      font-family: 'ITC Avant Garde Gothic Std Bold', 'Avant Garde', 'Century Gothic', sans-serif;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 22.67px;
+      color: var(--corporate-charcoal);
+    }
+
+    label {
+      font-family: 'ITC Avant Garde Gothic Std Bold', 'Avant Garde', 'Century Gothic', sans-serif;
+      font-weight: 500;
+      font-size: 0.875rem;
+      line-height: 1.4;
+      color: var(--corporate-charcoal);
+    }
+
+    button {
+      font-family: 'ITC Avant Garde Gothic Std Bold', 'Avant Garde', 'Century Gothic', sans-serif;
+      font-weight: 500;
+      font-size: 0.875rem;
+      line-height: 1.4;
+    }
+
+    input {
+      font-family: 'ITC Avant Garde Gothic Std Bold', 'Avant Garde', 'Century Gothic', sans-serif;
+      font-weight: 400;
+      font-size: 1rem;
+      line-height: 1.4;
+      color: var(--corporate-charcoal);
+    }
+  }
+}
+
+html {
+  font-size: var(--font-size);
+}
