@@ -5563,6 +5563,12 @@
   }
 
   @media (hover: hover) {
+    .hover\:text-\[\#002d6b\]:hover {
+      color: #002d6b;
+    }
+  }
+
+  @media (hover: hover) {
     .hover\:text-\[\#2B2B2B\]:hover {
       color: #2b2b2b;
     }
